@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+@keyframes load {
+    0%{
+        transform: translateY(-3em);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.nav-icon{
+    width: 2em;
+    display:none
+}
+
+.nav-txt{
+    display:initial
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #DDE6F3;
+    animation: load 2s 0s;
+}
+
+header,footer{
+    width: 100%;
+    height: auto;
+    background-color: #141B41;
+}
+
+.main-title{
+    margin-top: 0.5em;
+    color: #98B9F2;
+    font-size: 2.5em;
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    font-size: 1.1em;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    overflow-inline:clip;
+}
+
+a{
+    text-decoration: none;
+    color: #918EF4;
+    font-weight: 600;
+}
+
+.container-3{
+    top: 2em;
+    position:absolute;
+    right: 2em;
+}
+
+.reload{
+    width: 1.7em;
+}
+
+.logos{
+    width: 2.2em;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.container-grid{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 40% 50%
+}
+
+@media (max-width: 800px) {
+    .nav-icon{
+        display:initial
+    }
+
+    .nav-txt{
+        display:none
+    }
+}
