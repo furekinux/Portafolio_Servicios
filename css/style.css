@@ -10,13 +10,16 @@
     }
 }
 
+
+
 .nav-icon{
     width: 2em;
     display:none
 }
 
 .nav-txt{
-    display:initial
+    display:initial;
+    font-size: 1.2em;
 }
 
 *{
@@ -35,47 +38,63 @@ html{
 
 body{
     width: 100%;
-    background-color: #DDE6F3;
+    background-color: #E7ECEF;
     animation: load 2s 0s;
 }
 
 header,footer{
     width: 100%;
     height: auto;
-    background-color: #141B41;
+    z-index: 10;
 }
 
 .main-title{
     margin-top: 0.5em;
-    color: #98B9F2;
+    color: #E7ECEF;
     font-size: 2.5em;
 }
 
 .container-1{
     display: flex;
     justify-content: center;
+    background-color: #274C77;
+    z-index: 10;
+}
+
+.container-4{
+    display: flex;
+    justify-content: center;
+    background-color: #274C77;
 }
 
 nav{
     font-size: 1.1em;
-    width: 75%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5em;
     overflow-inline:clip;
+
 }
 
 a{
     text-decoration: none;
-    color: #918EF4;
+    color: #A3CEF1;
     font-weight: 600;
+    transition: 0.3s ease, opacity 0.3s ease;
+}
+
+nav a:hover{
+    color: #ffffff;
+    
 }
 
 .container-3{
     top: 2em;
     position:absolute;
     right: 2em;
+    z-index: 5;
 }
 
 .reload{
@@ -100,15 +119,67 @@ a{
     padding: 0;
     display: grid;
     gap: 1em;
-    grid-template-columns: 40% 50%
+    grid-template-columns: 30% 50%
 }
 
-@media (max-width: 800px) {
+section{
+    margin: 4em 2em;
+}
+
+@media (max-width: 900px) {
+
+    section{
+        margin: 4em 2em;
+    }
+
+    .main-title{
+        margin-bottom: 0.5em;
+    }
+
+    .container-4 {
+        position: relative;
+        width: 100%;
+        background: #274C77;
+    }
+
+    .navigator {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        background: #274C77;
+        transform: translateY(-90%); 
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+        white-space: nowrap; /* Mantiene los elementos en una sola línea */
+    }
+    
+    .navigator a {
+        text-decoration: none;
+        padding: 10px 20px; /* Espaciado horizontal y vertical */
+        display: flex;
+        align-items: center;
+    }
+    
+    .navigator a:hover {
+        background: #232f70;
+    }
+    
+    header:hover .navigator {
+        transform: translateY(0); /* Mostrar menú al hacer hover en el contenedor */
+        visibility: visible;
+        opacity: 1;
+    }
+
     .nav-icon{
-        display:initial
+        display:initial;
+        width: 2.3em;
     }
 
     .nav-txt{
         display:none
     }
+
 }
