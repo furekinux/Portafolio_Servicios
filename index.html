@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="shortcut icon" href="./storage/img/favicon.svg" type="image/x-icon">
     <title>Portafolio de servicios</title>
     <meta name="description" content="Portafolio de servicios de un desarrollador de software. Descubre mi perfil, objetivos, misión, visión, valores, certificaciones, servicios y proyectos.">
@@ -17,36 +18,53 @@
         <div class="container-4">
             <nav class="navigator">
                 <a class="nav-link" href="#profile">
-                    <p class="nav-txt">Perfil</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/icon.svg"></object>         
+                    <div>
+                        <p class="nav-txt">Perfil</p>
+                        <img src="./storage/img/icon.svg" class="nav-icon"/>
+                    </div>
                 </a>
                 <a class="nav-link" href="#objectives">
-                    <p class="nav-txt">Objetivos</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/objective.svg"></object>  
+                    <div>
+                        <p class="nav-txt">Objetivos</p>
+                        <img src="./storage/img/objective.svg" class="nav-icon"/>
+                    </div>
                 </a>
                 <a class="nav-link" href="#mission">
-                    <p class="nav-txt">Misión</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/mission.svg"></object>  
+                    <div>
+                        <p class="nav-txt">Misión</p>
+                        <img src="./storage/img/icon.svg" class="nav-icon"/>
+                        <object class="nav-icon" type="image/svg+xml" data="./storage/img/mission.svg"></object>  
+                    </div>
                 </a>
                 <a class="nav-link" href="#vision">
-                    <p class="nav-txt">Visión</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/vision.svg"></object>  
+                    <div>
+                        <p class="nav-txt">Visión</p>
+                        <object class="nav-icon" type="image/svg+xml" data="./storage/img/vision.svg"></object>  
+                    </div>
                 </a>
                 <a class="nav-link" href="#values">
-                    <p class="nav-txt">Valores</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/heart.svg"></object>
+                    <div>
+                        <p class="nav-txt">Valores</p>
+                        <object class="nav-icon" type="image/svg+xml" data="./storage/img/heart.svg"></object>
+                    </div>
                 </a>
                 <a class="nav-link" href="#certificates">
-                    <p class="nav-txt">Certificaciones</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/certif.svg"></object>
+                    <div>
+                        <p class="nav-txt">Certificaciones</p>
+                        <object class="nav-icon" type="image/svg+xml" data="./storage/img/certif.svg"></object>
+                    </div>
                 </a>
                 <a class="nav-link" href="#services">
-                    <p class="nav-txt">Servicios</p>
-                    <object class="nav-icon" type="image/svg+xml" data="./storage/img/service.svg"></object>
+                    <div>
+                        <p class="nav-txt">Servicios</p>
+                        <object class="nav-icon" type="image/svg+xml" data="./storage/img/service.svg"></object>
+                    </div>
                 </a>
                 <a class="nav-link" href="#projects">
+                    <div>
                     <p class="nav-txt">Proyectos</p>
                     <object class="nav-icon" type="image/svg+xml" data="./storage/img/projects.svg"></object>
+                    </div>
                 </a>
             </nav>
         </div>
@@ -57,76 +75,112 @@
 
     <div class="container-2">
 
-        <section id="profile">
-            <h1>Mi perfil</h1>
-            <h2>Acerca de mí</h2>
-            <p>Me dedico al aprendizaje constante, adquiriendo conocimientos que me permitan abordar de manera creativa los desafíos que surgen en el ámbito del desarrollo de software.</p>
-            <h2>Competencias</h2>
-            <ul type="none">
-                <li>Empatía</li>
-                <li>Creatividad</li>
-                <li>Adaptabilidad</li>
-                <li>Trabajo en equipo</li>
-                <li>Organización</li>
-            </ul>
-            <h2>Habilidades técnicas</h2>
-            <ul type="none">
-                <li>Python</li>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-            </ul>
-            <h2>Información adicional</h2>
+        <section class="contain-info" id="profile">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <h1 class="title-2">Mi perfil</h1>
+                <img class="picture" src="./storage/img/IMG-20240703-WA0003.png"/>
+                <p>¡Hola! Soy Daniela Forero Ballén y me dedico al aprendizaje constante, adquiriendo conocimientos que me permitan abordar de manera creativa los desafíos que surgen en el ámbito del desarrollo de software.</p>
+                <h2>Mi Competencias</h2>
+                <ul type="none">
+                    <li>Empatía</li>
+                    <li>Creatividad</li>
+                    <li>Adaptabilidad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Organización</li>
+                </ul>
+
+                <h2>Mis Habilidades técnicas</h2>
+                <div class="contain-abilities">
+                    <img class="abilities" src="./storage/img/267_Python-1024.png"/>
+                    <img class="abilities" src="./storage/img/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png"/>
+                    <img class="abilities" src="./storage/img/css-icon-37.png"/>
+                    <img class="abilities" src="./storage/img/615103.png"/>
+                    <img class="abilities" src="./storage/img/java-logo.png"/>
+                    <img class="abilities" src="./storage/img/mysql_PNG23.png"/>
+                </div>
+                <h2>Información adicional</h2>
+                <p>Además de mis habilidades en el campo del desarrollo de software, practico durante mi tiempo libre el arte e ilustración.</p>
+            </div>
         </section>
 
-        <section id="objectives">
-            <h1>Mis objetivos Profesionales</h1>
-            <p>Me dedico al aprendizaje constante, adquiriendo conocimientos que me permitan abordar de manera creativa los desafíos que surgen en el ámbito del desarrollo de software.</p>
+        <section class="contain-info" id="objectives">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Mis objetivos Profesionales</h1>
+                <p>Me dedico al aprendizaje constante, adquiriendo conocimientos que me permitan abordar de manera creativa los desafíos que surgen en el ámbito del desarrollo de software.</p>
+            </div>
         </section>
 
-        <section id="mission">
-            <h1>Misión</h1>
-            <p>Mi objetivo profesional es ofrecer mis habilidades y talentos, siendo parte de la evolución constante de la tecnología.</p>
+        <section class="contain-info" id="mission">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Misión</h1>
+                <p>Mi objetivo profesional es ofrecer mis habilidades y talentos, siendo parte de la evolución constante de la tecnología.</p>
+            </div>
         </section>
 
-        <section id="vision">
-            <h1>Visión</h1>
-            <p>Enriquecer mis conocimientos a un nivel superior por medio de la experiencia laboral y el trabajo en equipo. Y así, brindar soluciones creativas e innovadoras.</p>
+        <section class="contain-info" id="vision">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Visión</h1>
+                <p>Enriquecer mis conocimientos a un nivel superior por medio de la experiencia laboral y el trabajo en equipo. Y así, brindar soluciones creativas e innovadoras.</p>
+            </div>
         </section>
 
-        <section id="values">
-            <h1>Valores</h1>
-            <p>Me destaco en los siguientes aspectos a nivel profesional:</p>
-            <ul type="none">
-                <li>Creatividad</li>
-                <li>Respeto</li>
-                <li>Empatía</li>
-                <li>Amabilidad</li>
-                <li>Igualdad</li>
-                <li>Aprendizaje</li>
-                <li>Solidaridad</li>
-            </ul>
+        <section class="contain-info" id="values">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Valores</h1>
+                <p>Me destaco en los siguientes aspectos a nivel profesional:</p>
+                <ul type="none">
+                    <li>Creatividad</li>
+                    <li>Respeto</li>
+                    <li>Empatía</li>
+                    <li>Amabilidad</li>
+                    <li>Igualdad</li>
+                    <li>Aprendizaje</li>
+                    <li>Solidaridad</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="certificates">
-            <h1>Certificaciones</h1>
-            <h2>Certificación de Inglés: B2</h2>
-            <p>Texto.</p>
+        <section class="contain-info" id="certificates">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Certificaciones</h1>
+                <h2>Certificación de Inglés: B2</h2>
+                <p>Texto.</p>
+            </div>
         </section>
 
-        <section id="services">
-            <h1>Servicios</h1>
-            <p>Ofrezco mis habilidades de desarrollo de Software junto a mis habilidades suaves para un entorno laboral.</p>
+        <section class="contain-info" id="services">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Servicios</h1>
+                <p>Ofrezco mis habilidades de desarrollo de Software junto a mis habilidades suaves para un entorno laboral.</p>
+            </div>
         </section>
 
-        <section id="projects">
-            <h1>Proyectos</h1>
-            <h2>Proyecto SpaceX</h2>
-            <p>Realizado en Campuslands en el año 2024. Desarrollo de FrontEnd y BackEnd para vista de información de lectura de SpaceX API usando HTML, CSS y JavaScript.</p>
-            <h2>Proyecto Kario Media</h2>
-            <p>Realizado en Campuslands en el año 2024. Desarrollo de FrontEnd para una plataforma web de consulta usando HTML y CSS. Se realizó con un compañero.</p>
-            <h2>Proyecto Campuslands</h2>
-            <p>Realizado en Campuslands en el año 2024. Desarrollo de BackEnd para el sistema de administración de una institución de formación con Python. Se realizó con una compañera.</p>
+        <section class="contain-info" id="projects">
+            <div class="col-1">
+            </div>
+            <div>
+                <h1 class="title-2">Proyectos</h1>
+                <h2>Proyecto SpaceX</h2>
+                <p>Realizado en Campuslands en el año 2024. Desarrollo de FrontEnd y BackEnd para vista de información de lectura de SpaceX API usando HTML, CSS y JavaScript.</p>
+                <h2>Proyecto Kario Media</h2>
+                <p>Realizado en Campuslands en el año 2024. Desarrollo de FrontEnd para una plataforma web de consulta usando HTML y CSS. Se realizó con un compañero.</p>
+                <h2>Proyecto Campuslands</h2>
+                <p>Realizado en Campuslands en el año 2024. Desarrollo de BackEnd para el sistema de administración de una institución de formación con Python. Se realizó con una compañera.</p>
+            </div>
         </section>
     </div>
 
