@@ -10,7 +10,67 @@
     }
 }
 
+.contain-info{
+    justify-content: center;
+    align-items: center;
+    background-color: #E7ECEF;
+    padding: 2em;
+    box-shadow: 0.3em 0.3em 0.7em #232e70d7;
+    border-radius: 1em;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 5%;
+    grid-template-columns: 25% 70% auto;
+}
 
+.col-1{
+    background-color: #274C77;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em 0em 0em 1em;
+}
+
+.abilities{
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    margin: 0em 1em;
+    margin-bottom: 0.7em;
+}
+
+.contain-info p {
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+
+.title-2{
+    margin-top: 0.5em;
+    background-color: #274C77;
+    border-radius: 1em;
+    color: #E7ECEF;
+    margin-bottom: 1em;
+    padding: 0.2em 0em;
+}
+
+.contain-info ul{
+    margin-bottom: 1em;
+}
+
+.contain-abilities{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.picture{
+    border-radius: 50%;
+    width: 40vi;
+    object-fit: cover;
+    height: 40vi;
+    border: solid 0.5em #605f6b;
+}
 
 .nav-icon{
     width: 2em;
@@ -116,70 +176,13 @@ nav a:hover{
 .container-grid{
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     display: grid;
-    gap: 1em;
-    grid-template-columns: 30% 50%
+    gap: 10%;
+    grid-template-columns: 35% 60%;
 }
 
 section{
     margin: 4em 2em;
 }
 
-@media (max-width: 900px) {
-
-    section{
-        margin: 4em 2em;
-    }
-
-    .main-title{
-        margin-bottom: 0.5em;
-    }
-
-    .container-4 {
-        position: relative;
-        width: 100%;
-        background: #274C77;
-    }
-
-    .navigator {
-        display: flex;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        visibility: hidden;
-        opacity: 0;
-        background: #274C77;
-        transform: translateY(-90%); 
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
-        white-space: nowrap; /* Mantiene los elementos en una sola línea */
-    }
-    
-    .navigator a {
-        text-decoration: none;
-        padding: 10px 20px; /* Espaciado horizontal y vertical */
-        display: flex;
-        align-items: center;
-    }
-    
-    .navigator a:hover {
-        background: #232f70;
-    }
-    
-    header:hover .navigator {
-        transform: translateY(0); /* Mostrar menú al hacer hover en el contenedor */
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .nav-icon{
-        display:initial;
-        width: 2.3em;
-    }
-
-    .nav-txt{
-        display:none
-    }
-
-}
