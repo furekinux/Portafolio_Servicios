@@ -23,11 +23,16 @@
     grid-template-columns: 25% 70% auto;
 }
 
-.col-1{
-    background-color: #274C77;
-    width: 100%;
-    height: 100%;
-    border-radius: 1em 0em 0em 1em;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .abilities{
@@ -70,6 +75,7 @@
     object-fit: cover;
     height: 40vi;
     border: solid 0.5em #605f6b;
+    margin-bottom: 1em;
 }
 
 .nav-icon{
@@ -157,19 +163,15 @@ nav a:hover{
     z-index: 5;
 }
 
-.reload{
-    width: 1.7em;
-}
-
 .logos{
     width: 2.2em;
 }
 
 .contact{
     display: flex;
-    align-items: center;
-    justify-content:space-around;
-    width: 30%;
+    align-content: center;
+    background-color: aqua;
+    width: 100%;
     margin-top: 1em;
 }
 
@@ -178,11 +180,130 @@ nav a:hover{
     margin: 0;
     padding: 1em;
     display: grid;
-    gap: 10%;
-    grid-template-columns: 35% 50%;
+    gap: 5%;
+    grid-template-columns: 30% 10% 50% auto;
 }
 
 section{
     margin: 4em 2em;
+    font-size: 1.5em;
 }
 
+.col-1 {
+    background: linear-gradient(45deg, #274C77, #6ea3d8, #274C77);
+    background-size: 300% 300%;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em 0em 0em 1em;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-list {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 2em auto;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-link img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.footer-link:hover {
+    color: #c3e4ff;
+}
+
+.footer-link span {
+    font-size: 1.4em;
+}
+
+.contact-me{
+    display: flex;
+    width: 30%;
+    padding-left: 9vi;
+    margin-top: 2em;
+}
+
+
+
+.falling-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    width: 5vi;/* Adjust the size as needed */
+    opacity: 0;
+    animation: fallAnimation 10s infinite;
+}
+
+@keyframes fallAnimation {
+    0% {
+        transform: translateY(5000%);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-500%);
+        opacity: 0;
+    }
+}
+
+/* Adding animation for individual icons with different delays */
+.icon:nth-child(1) {
+    left: 2%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.icon:nth-child(2) {
+    left: 20%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.icon:nth-child(3) {
+    left: 40%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+.icon:nth-child(4) {
+    left: 60%;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.icon:nth-child(5) {
+    left: 75%;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.icon:nth-child(6) {
+    left: 50%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
