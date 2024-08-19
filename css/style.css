@@ -31,8 +31,8 @@
 }
 
 .abilities{
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     object-fit: contain;
     margin: 0em 1em;
     margin-bottom: 0.7em;
@@ -179,7 +179,7 @@ nav a:hover{
     padding: 1em;
     display: grid;
     gap: 10%;
-    grid-template-columns: 35% 60%;
+    grid-template-columns: 35% 50%;
 }
 
 section{
