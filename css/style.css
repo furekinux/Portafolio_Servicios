@@ -20,7 +20,7 @@
     display: grid;
     justify-content: space-evenly;
     gap: 5%;
-    grid-template-columns: 25% 70% auto;
+    grid-template-columns: 20% 70% auto;
 }
 
 @keyframes gradientAnimation {
@@ -178,6 +178,8 @@ nav a:hover{
 .container-grid{
     width: 100%;
     margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
     padding: 1em;
     display: grid;
     gap: 5%;
@@ -201,7 +203,6 @@ section{
 }
 
 .footer-list {
-
     display: flex;
     flex-direction: column;
     align-items: left;
